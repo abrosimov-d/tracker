@@ -43,11 +43,13 @@ export default class Tracker {
     }
 
     render() {
-        return `<div style="display: inline;" class="${this.id}"></div>`;
+        return `<div style="display: block;" class="${this.id}"></div>`;
     }
 
     style() {
-        this.element.style.fontSize = '72px';
+        this.element.style.color = 'gray'
+        this.element.style.fontSize = '48px';
         this.element.style.padding = '10px';
+        this.element.style.fontFamily = 'Courier New';
     }
 }
